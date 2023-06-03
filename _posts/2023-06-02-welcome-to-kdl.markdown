@@ -1,7 +1,8 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: post
+title:  "Welcome to Keep Deep Learning!"
+date:   2023-06-02 22:29:38 -0600
+categories: intro
 ---
 
 Hello there! I'm Jonathan Bown, an MLOps Engineer working to bring A.I. to higher education. My foundation in mathematical statistics and computer science enables me to dive deep into complex problems and emerge with clear, innovative solutions.
@@ -20,4 +21,3 @@ Follow my work:
 > - [GitHub](https://github.com/jon-bown)
 - [Kaggle](https://www.kaggle.com)
 - [LinkedIn](https://www.linkedin.com/in/jonathan-bown/)
-
