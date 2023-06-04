@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Keep Deep Learning!"
-date:   2023-06-01
+date:   2023-06-02 14:01:00 -0600
 categories: intro
 ---
 
