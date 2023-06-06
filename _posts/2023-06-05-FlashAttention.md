@@ -2,6 +2,7 @@
 layout: post
 title: "⚡ FlashAttention: Speed Up Your LLM 🏎️ "
 date: 2023-06-05
+categories: ml
 ---
 A big downside of open-source LLMs right now, relative to GPT-4, is the small size of their **context window**. 
 
