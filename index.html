@@ -11,25 +11,14 @@ layout: default
 
 <div class="navbar">
     <button id="feedButton" class="navbar-item" onclick="switchContent('Feed')">Feed</button>
-    <button class="navbar-item" onclick="switchContent('math')">Mathe</button>
+    <button class="navbar-item" onclick="switchContent('math')">Math</button>
     <button class="navbar-item" onclick="switchContent('data')">Data</button>
     <button class="navbar-item" onclick="switchContent('ml')">Machine Learning</button>
-    <button class="navbar-item" onclick="switchContent('dev')">Development</button>
+    <button class="navbar-item" onclick="switchContent('python')">Python</button>
+    <button class="navbar-item" onclick="switchContent('book')">Books</button>
+    <button class="navbar-item" onclick="switchContent('intro')">About</button>
 </div>
   
- <!-- <ul>
-    {% for post in site.posts %}
-      <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
-        <p>{{ post.excerpt }}</p>
-        <hr />
-      </li>
-    {% endfor %}
-  </ul> -->
-
-
-
   <div id="posts">
   {% for post in site.posts %}
     <div class="post" {% for category in post.categories %}data-category-{{ category }} {% endfor %}>
@@ -69,6 +58,7 @@ layout: default
   
     // Add the selected class to the selected navbar item
     document.querySelector('.navbar-item[onclick="switchContent(\'' + category + '\')"]').classList.add('selected');
+
   }
   
   // Select the 'Feed' category initially
