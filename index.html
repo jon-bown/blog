@@ -19,16 +19,17 @@ layout: default
     <button class="navbar-item" onclick="switchContent('intro')">About</button>
 </div>
   
-  <div id="posts">
-  {% for post in site.posts %}
-    <div class="post" {% for category in post.categories %}data-category-{{ category }} {% endfor %}>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.date | date: "%B %d, %Y" }}</p>
-      <p>{{ post.excerpt }}</p>
-      <hr>
-    </div>
-  {% endfor %}
+<div id="posts">
+    {% for post in site.posts %}
+      <div class="post" {% for category in post.categories %}data-category-{{ category }} {% endfor %}>
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.excerpt }}</p>
+        <hr>
+      </div>
+    {% endfor %}
   </div>
+  
 
   {% include footer.html %}
   

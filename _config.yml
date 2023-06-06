@@ -22,8 +22,8 @@ title: Keep Deep Learning
 email: jonathan.k.bown@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Recording my journey through the world of Machine Learning and Artificial Intelligence. 
-baseurl: "/blog"
-url: "http://jon-bown.github.io"
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "http://jon-bown.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jon-bown
 
 google_analytics: G-HP0KVW5LZD # Replace with your own Google Analytics tracking ID
