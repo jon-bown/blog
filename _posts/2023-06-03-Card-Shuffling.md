@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mathematics of Card Shuffling"
+description: ""
 date:  2023-06-03
 categories: math
 ---

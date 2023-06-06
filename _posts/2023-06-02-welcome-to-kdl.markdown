@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Keep Deep Learning!"
+description: "Introduction to Keep Deep Learning Blog"
 date:   2023-06-02 14:01:00 -0600
 categories: intro
 ---

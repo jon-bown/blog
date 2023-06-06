@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<head>
+    <!-- Other head content... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    {% include google_analytics.html %}
+</head>
+
+<header class="post-header">
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+</header>
+
+<article class="post">
+  <section class="post-content">
+    {{ content }}
+  </section>
+
+  <div style="text-align: center;">
+    <a href="{{ site.baseurl }}/">Back to Home</a>
+  </div>
+  
+  {% include footer.html %}
+</article>
