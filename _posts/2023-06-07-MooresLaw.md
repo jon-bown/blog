@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "⚡💻 Outpacing Moore's Law: The AI Performance Surge 🚀📈"
 date: 2023-06-07
 categories: ml
