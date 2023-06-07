@@ -49,6 +49,8 @@ FlashAttention is open source and availble immediately to integrate into your LL
 
 [FlashAttention Paper](https://arxiv.org/pdf/2205.14135.pdf)
 
+[Kaggle Post](https://www.kaggle.com/discussions/general/414913)
+
 
 
 

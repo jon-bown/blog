@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "⚡💻 Outpacing Moore's Law: The AI Performance Surge 🚀📈"
+description: "Hardware with ML performance metrics is outperforming Moore's Law"
 date: 2023-06-07
 categories: ml
 ---
@@ -49,6 +50,8 @@ I think I'm starting to further understand Nvidia's recent stock performance, al
 [NVidia MLPerf 2023 Results](https://blogs.nvidia.com/blog/2023/04/05/inference-mlperf-ai/)
 
 [ML Commons](https://mlcommons.org/en/)
+
+[Kaggle Post](https://www.kaggle.com/discussions/general/415576)
 
 
 
