@@ -16,6 +16,14 @@ According to an article in [IEEE Spectrum](https://spectrum.ieee.org/mlperf-rank
 
 ![Moore's law compared to neural network training times]({{ site.baseurl }}/assets/images/moore.png)
 
+## Moore's Law: Not a Direct Predictor of AI Progress
+
+Moore's Law is primarily focused on the physical aspect of computing hardware, specifically the number of transistors on integrated circuits, rather than actual computing power or computational performance. While it has often been used as a rule of thumb for anticipating increases in computing performance, it doesn't provide a direct measure or prediction of future capabilities in complex computational tasks such as those benchmarked by MLPerf. As of now, there's no equivalent 'law' or widely accepted predictive model for the performance trajectory of machine learning systems."
+
+It's worth noting that the correlation between transistor count (which Moore's Law describes) and performance is not direct, especially for tasks as complex as machine learning. Many other factors, including software algorithms, data I/O speeds, memory hierarchy design, power efficiency, and more, play significant roles in determining the real-world performance of machine learning systems.
+
+Moore's Law has been a useful guideline for hardware development, but predicting the pace of improvement in machine learning performance is much more complex due to these many additional factors. This is one reason why benchmarks like MLPerf are so valuable - they offer a more holistic view of system performance for machine learning tasks.
+
 ## What is MLPerf?
 
 MLPerf consists of eight benchmark tests: image recognition, medical-imaging segmentation, two versions of object detection, speech recognition, natural-language processing, recommendation, and a form of gameplay called reinforcement learning. It was founded in 2018 by ML Commons and is often referred to as "the Olympics of machine learning" because computers and software from 21 different companies compete on any or all the tests. This incentivizes hardware companies like Nvidia to put their best foot forward.
