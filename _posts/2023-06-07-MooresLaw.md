@@ -35,7 +35,7 @@ To try and wrap your head around how quickly things are moving in the hardware a
 
 When the IEEE article came out last June, the A100 was the hardware used for Nvidia's MLPerf tests and these were the results from [MLPerf v2.0](https://mlcommons.org/en/training-normal-20/).
 
-![Nvidia MLPerf 2022 Performance]({{ site.baseurl }}/assets/images/Nvidia_2022.png)
+![Nvidia MLPerf 2022 Performance]({{ site.baseurl }}/assets/images/nvidia_2022.png)
 
 
 In September of 2022, the H100 was introduced and compared to the A100 in the most recent MLPerf [v3.0](https://mlcommons.org/en/inference-edge-30/) in April 2023. The A100 and H100 were compared for the different tasks. 
