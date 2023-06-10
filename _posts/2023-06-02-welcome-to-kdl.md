@@ -16,7 +16,7 @@ Welcome to my blog, 'Keep Deep Learning'. This space serves several purposes:
 
 Where did I get the idea for the name you ask?
 
-It all started when I went to a book signing at ODSC East with Dr. Jon Krohn, author of "Deep Learning Illustrated". I was lucky enough to get one of FIVE physical copies that day and he signed it with the phrase 'Keep Deep Learning'. It stuck!
+It all started when I went to a book signing at ODSC West 2022 with Dr. Jon Krohn, author of "Deep Learning Illustrated". I was lucky enough to get one of FIVE physical copies that day and he signed it with the phrase 'Keep Deep Learning'. It stuck!
 
 ![Alt text]({{ site.baseurl }}/assets/images/krohn_sign.JPG)
 
