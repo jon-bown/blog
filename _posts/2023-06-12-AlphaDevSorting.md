@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "🚀 AlphaDev: Revolutionizing Sorting Algorithms! 💡"
-date: 2023-06-08 
+date: 2023-06-12
 categories: ml
 ---
 
