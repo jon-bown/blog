@@ -62,3 +62,5 @@ Although the articles didn't cite the specific speed improvements, the performan
 [Nature Article](https://www.nature.com/articles/d41586-023-01883-4)
 
 [NewScientist](https://www.newscientist.com/article/2376512-deepmind-ais-new-way-to-sort-objects-could-speed-up-global-computing/)
+
+[Google DeepMind Article](https://www.deepmind.com/blog/alphadev-discovers-faster-sorting-algorithms)
