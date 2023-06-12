@@ -7,7 +7,7 @@ categories: ml
 
 Back in my early days of learning programming, sorting was a huge topic in the Algorithms and Data Structures class. I remember learning about the complexity of different sorting algorithms and clearly seeing the advantage of using more advanced algorithms like QuickSort or MergeSort. Those were the best we could do right?
 
-According to several articles published yesterday, one of the first improvements in sorting algorithms in over a decade has been accomplished by AlphaDev, a product of Google's DeepMind that originally used reinforcement learning (RL) to master games like Chess and Go.
+According to several articles published last week, one of the first improvements in sorting algorithms in over a decade has been accomplished by AlphaDev, a product of Google's DeepMind that originally used reinforcement learning (RL) to master games like Chess and Go.
 
 ## A Bit About Alpha Dev
 
