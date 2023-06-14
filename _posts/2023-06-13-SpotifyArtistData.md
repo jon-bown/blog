@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Create Spotify Artist Dataset with Python"
+title: "🎶 Create a Spotify Artist Dataset with Python 🐍"
+description: ""
 date: 2023-06-13
 categories: python
 ---
