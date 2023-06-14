@@ -5,7 +5,12 @@ date: 2023-06-13
 categories: python
 ---
 
+Maintaining good datasets anywhere, particularly ones that change over time, is challenging. Manually updating files and posting them to your favorite platform takes a lot of time. Lets make things a bit easier.
+
+I recently build a dataset on [Kaggle](https://www.kaggle.com/datasets/jonbown/metallica-songs) of all Metallica albums/songs. I spent some time going through the Kaggle API documentation and understanding the best way to automate the update workflow. I also needed to use the Spotify API to get the music data. I want to share what I learned for others working on similar projects.
+
 These instructions are specific to creating a datset of a single artist using the Spotify API. 
+
 
 > 1. Log in or create spotify developer account
 2. Create a new application, keys are created on the application level not the user account level.
@@ -101,11 +106,8 @@ for album_id in album_ids:
         track_row['name'] = track['name']
         track_row['release_date'] = album_info['release_date']
         track_row['track_number'] = track['track_number']
-        try:
-            popularity = sp.track(track['id'])['popularity']
-            track_row['popularity'] = popularity
-        except:
-            popularity = float('nan')
+        popularity = sp.track(track['id'])['popularity']
+        track_row['popularity'] = popularity
         features = sp.audio_features(track['id'])[0]
         track_row['danceability'] = features['danceability']
         track_row['energy'] = features['energy']
@@ -123,6 +125,7 @@ for album_id in album_ids:
         artist_data.append(track_row)
 ```
 
+*Notice there isn't much error handling here, this is because I want to focus on the overall functionality and not the edge cases. But its very possible you'll encounter various issues specific to whatever artist you're working with when unpacking the API results.*
 
 ## Finalize Dataframe
 
