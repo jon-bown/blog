@@ -4,20 +4,22 @@
 # Change to the directory containing your _posts directory
 cd ./_posts
 
-# Get current date
-date=$(date +'%Y-%m-%d')
+# Get current date +1 day
+date=$(date -v+1d +'%Y-%m-%d')
 
 # Replace spaces in the title with dashes
 title=$(echo $1 | tr ' ' '-')
 
 # Create the new post file
-touch "${date}-${title}.md"
+filename="${date}-${title}.md"
+touch "$filename"
 
 # Add YAML front matter
-echo "---" >> "${date}-${title}.md"
-echo "layout: post" >> "${date}-${title}.md"
-echo "title: \"$1\"" >> "${date}-${title}.md"
-echo "date: ${date} ${time}" >> "${date}-${title}.md"
-echo "---" >> "${date}-${title}.md"
+echo "---" >> "$filename"
+echo "layout: post" >> "$filename"
+echo "title: \"$1\"" >> "$filename"
+echo "description: \"\"" >> "$filename"
+echo "date: ${date}" >> "$filename"
+echo "---" >> "$filename"
 
-echo "New post created with filename: ${date}-${title}.md"
+echo "New post created with filename: ${filename}"
