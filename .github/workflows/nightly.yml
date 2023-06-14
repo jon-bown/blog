@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build Jekyll site
-      uses: jekyll/builder@main
+      uses: actions/jekyll-build-pages@v1.0.7
       with:
         args: jekyll build
 
