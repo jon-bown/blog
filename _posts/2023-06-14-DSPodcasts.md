@@ -4,7 +4,7 @@ title: "🎙️ Data Science & ML Podcasts 2023 🎧"
 date: 2023-06-14
 ---
 
-I've been listening to some fantastic data science and machine learning podcasts recently, and I'd love to share my favorites with you. I'm also anxious to discover new ones, so please share your recommendations in the comments below!
+I've been listening to some fantastic data science and machine learning podcasts recently, and I'd love to share my favorites with you.
 
 ### 🌟 My Top Picks:
 
@@ -24,4 +24,4 @@ These are podcasts that are the most relevant to me and my work in MLOps. They a
 
 > 6. [Lex Fridman Podcast](https://lexfridman.com/podcast/) - Lex Fridman sometimes interviews top minds in AI, deep learning, and robotics, discussing cutting-edge research, the future of AI, and the ethical considerations surrounding the technology.
 
-I hope you find these podcasts as insightful and engaging as I do. Don't forget to drop your recommendations in the comments section! Happy listening! 🎧
+I hope you find these podcasts as insightful and engaging as I do. Happy listening! 🎧
