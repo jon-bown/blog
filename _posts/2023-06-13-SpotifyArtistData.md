@@ -1,12 +1,10 @@
 ---
 layout: post
 title: "🎶 Create a Spotify Artist Dataset with Python 🐍"
-description: ""
+description: "Use the Spotify API to Build an Artist-Specific Dataset"
 date: 2023-06-13
 categories: python
 ---
-
-Maintaining good datasets anywhere, particularly ones that change over time, is challenging. Manually updating files and posting them to your favorite platform takes a lot of time. Lets make things a bit easier.
 
 I recently build a dataset on [Kaggle](https://www.kaggle.com/datasets/jonbown/metallica-songs) of all Metallica albums/songs. I spent some time going through the Kaggle API documentation and understanding the best way to automate the update workflow. I also needed to use the Spotify API to get the music data. I want to share what I learned for others working on similar projects.
 
@@ -60,7 +58,6 @@ artist_data = []
 This is as easy as going to the spotify website, looking up the right artist profile, and extracting the last bit of the URL from your browser.
 
 ```python
-#Get UNIQUE ALBUMS
 artist_uri = 'spotify:artist:URI HERE'
 ```
 
@@ -138,7 +135,7 @@ cols = ['spotify_id', 'spotify_uri', 'album', 'name', 'popularity', 'release_dat
 artist_dataframe = pd.DataFrame(artist_data, columns = cols)   
 ```
 
-From here you can output to a csv, send it to the Kaggle API, or just download and upload as a dataset to Kaggle. If you want to learn more, I have a few repositories that will come in handy. 
+From here you can output to a csv, send it to the Kaggle API, or just download and upload as a dataset to Kaggle or any other platform of your choosing. You can also maintain the dataset via GitHub, more on that in the Learn More section.
 
 # Learn More
 
@@ -151,3 +148,7 @@ From here you can output to a csv, send it to the Kaggle API, or just download a
 - [Spotify API Docs](https://developer.spotify.com/documentation/web-api)
 
 - [Spotipy](https://spotipy.readthedocs.io/en/2.22.1/)
+
+- [How to Build an Auto-Updating Open-Source Dataset Using Kaggle API and GitHub Actions](https://python.plainenglish.io/how-to-build-an-auto-updating-open-source-dataset-using-kaggle-api-and-github-actions-a7b010eca222)
+
+- [Extracting Song Data From the Spotify API Using Python](https://towardsdatascience.com/extracting-song-data-from-the-spotify-api-using-python-b1e79388d50)

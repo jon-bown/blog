@@ -3,6 +3,7 @@ layout: post
 title: "🎙️ Data Science & ML Podcasts 2023 🎧"
 description: ""
 date: 2023-06-14
+categories: ml
 ---
 
 I've been listening to some fantastic data science and machine learning podcasts recently, and I'd love to share my favorites with you.
