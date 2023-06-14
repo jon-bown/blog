@@ -141,7 +141,9 @@ From here you can output to a csv, send it to the Kaggle API, or just download a
 
 # Learn More
 
-- [Metallica Repo](https://github.com/jon-bown/metallica) - This repository uses GitHub actions and GitHub secrets to maintain the [Metallica Songs](https://www.kaggle.com/datasets/jonbown/metallica-songs) dataset here on Kaggle.
+- [Metallica Repo](https://github.com/jon-bown/metallica) - This repository uses GitHub actions and GitHub secrets to maintain the Metallica Songs dataset on Kaggle.
+
+- [Metallica Songs](https://www.kaggle.com/datasets/jonbown/metallica-songs) - Actively maintained dataset on Kaggle through the API.
 
 - [Template Repo](https://github.com/jon-bown/kaggle-data-pipeline) - This repository has a template you can work off of to build your own spotify artist dataset.
 
