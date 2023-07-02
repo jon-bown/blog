@@ -18,7 +18,7 @@ According to an article in [IEEE Spectrum](https://spectrum.ieee.org/mlperf-rank
 
 ## Moore's Law: Not a Direct Predictor of AI Progress
 
-Moore's Law is primarily focused on the physical aspect of computing hardware, specifically the number of transistors on integrated circuits, rather than actual computing power or computational performance. While it has often been used as a rule of thumb for anticipating increases in computing performance, it doesn't provide a direct measure or prediction of future capabilities in complex computational tasks such as those benchmarked by MLPerf. As of now, there's no equivalent 'law' or widely accepted predictive model for the performance trajectory of machine learning systems."
+Moore's Law is primarily focused on the physical aspect of computing hardware, specifically the number of transistors on integrated circuits, rather than actual computing power or computational performance. While it has often been used as a rule of thumb for anticipating increases in computing performance, it doesn't provide a direct measure or prediction of future capabilities in complex computational tasks such as those benchmarked by MLPerf. As of now, there's no equivalent 'law' or widely accepted predictive model for the performance trajectory of machine learning systems.
 
 It's worth noting that the correlation between transistor count (which Moore's Law describes) and performance is not direct, especially for tasks as complex as machine learning. Many other factors, including software algorithms, data I/O speeds, memory hierarchy design, power efficiency, and more, play significant roles in determining the real-world performance of machine learning systems.
 
