@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Acceleration Is Not All You Need: The State of AI Hardware"
+description: "My submission to The State of AI Kaggle Competition 2023"
+date: 2023-07-17
+categories: ml
+---
 # Acceleration Is *Not* All You Need: The State of AI Hardware
 ### By: Jonathan Bown
 ### Date: 07-16-2023
@@ -94,14 +101,18 @@ Nvidia has consistently submitted results for all eight benchmark tests, making 
 In the 2023 MLPerf tests (MLPerf v3.0), Nvidia's AI hardware exhibited a substantial performance increase compared to 2022. The newly introduced Nvidia H100 Tensor Core GPUs were designed with AI contributions and run on DGX H100 systems. They not only achieved the highest AI inference performance across all tests but also demonstrated a performance gain of up to 54% since their debut in September 2022 (Salvator, 2023). Figure 5b showcases the 2023 MLPerf results for the H100 compared to the A100. Specifically, in the healthcare domain, the capability of H100 GPUs have improved on the 3D U-Net medical imaging benchmark by 31%. Additionally, the H100 GPUs powered by the Transformer Engine excelled in the Bidirectional Encoder Representations from Transformers (BERT) LLM benchmark, significantly contributing to the rise of generative AI (Salvator, 2023). 
 
 <div align="center" style="background-color: #333; padding: 10px;">
-    <img src="https://www.hpcwire.com/wp-content/uploads/2021/09/Nvidia_Mlperf_Datacenter.png" style="width: 90%; height: auto;">
+
+![Nvidia 2022 MLPerf Results](/assets/images/nvidia_2022.png)
+
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
 <b>Figure 5a.</b> MLPerf A100 2022 results. From "Nvidia Orin Leaps Ahead in Edge AI, Boosting Leadership in MLPerf Tests," by D. Salvator, 2022.
 </div>
 
 <div align="center" style="background-color: #333; padding: 10px;">
-    <img src="https://blogs.nvidia.com/wp-content/uploads/2023/04/H100-GPU-inference-performance-MLPerf-1536x857.jpg" style="width: 90%; height: auto;">
+
+![Nvidia H100 2023](/assets/images/kaggle-essay-2023/H100-mlperf-2022.jpg)
+
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
 <b>Figure 5b.</b> MLPerf H100 2023 results. From "Inference MLPerf AI," by D. Salvator, 2023.
@@ -119,9 +130,9 @@ The following sections provide a summary of significant hardware advancements in
 Investment in AI hardware development significantly increased in 2021, with the total capital invested globally almost doubling to \$68 billion (Sharma, 2021). Precedence Research valued the 2021 AI hardware market at \$10 billion, projecting growth to \$90 billion by 2030 as shown in Figure 6 (Precedence Research, 2022). In 2021, the market demand for AI hardware was primarily driven by the need for more powerful processors, as depicted in Figure 7. This demand arose due to the significant divergence seen in the trajectories of compute power, which is vividly illustrated in Figure 8. Despite the limitations of storage and network compute power on the overall system's capabilities, it was the processors that boosted system compute measured in OPS. Specialized processors and accelerators increasingly bypassed the need for network or storage hardware by optimizing data flow on-device. This reduced the reliance on transferring data over the network, resulting in more efficient and faster computation (Vellante & Floyer, 2021).
 
 <div align="center" style="background-color: #333; padding: 10px;">
-    <div style="display: flex; justify-content: center;">
-        <img src="https://www.precedenceresearch.com/insightimg/Artificial-Intelligence-in-Hardware-Market-Size-2021-to-2030.jpg" style="width: 70%; object-fit: contain;"/>
-    </div>
+ 
+![Moore's Law with AI Comparison](/assets/images/kaggle-essay-2023/2021-2030-hardware-market-size.jpg)
+
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
     <b>Figure 6.</b> AI Hardware Market Value. Adapted from "Artificial Intelligence (AI) in Hardware Market," by Precedence Research, 2022.
@@ -129,7 +140,8 @@ Investment in AI hardware development significantly increased in 2021, with the 
 
 <div align="center" style="background-color: #333; padding: 10px;">
     <div style="display: flex; justify-content: center;">
-        <img src="https://www.precedenceresearch.com/insightimg/Artificial-Intelligence-in-Hardware-Market-Share-By-Type-2021.jpg" style="width: 70%; object-fit: contain;"/>
+
+![Processing Market Share](/assets/images/kaggle-essay-2023/processing-market-share.jpg)
     </div>
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
@@ -138,7 +150,8 @@ Investment in AI hardware development significantly increased in 2021, with the 
 
 <div align="center" style="background-color: #333; padding: 10px;">
     <div style="display: flex; justify-content: center;">
-        <img src="https://d2axcg2cspgbkk.cloudfront.net/wp-content/uploads/Breaking-Analysis_-Moores-Law-is-Accelerating-and-AI-is-Ready-to-Explode-3.jpg" style="width: 70%; object-fit: contain;"/>
+
+   ![Processing Market Share](/assets/images/kaggle-essay-2023/processing-explodes.jpg)
     </div>
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
@@ -855,144 +868,4 @@ Generative AI models developed by OpenAI (ChatGPT) and Google (Bard) were utiliz
 - *Research:* The Bing integration feature of ChatGPT was leveraged throughout the information gathering process to check for additional sources outside of the ones found using traditional search methods.
 
 - *Validation:* My written summaries of article contents were checked against the original source to ensure accuracy and avoid plagiarism.
-
-# Appendix
-
-*Code used for competition submission*
-
-
-```python
-import numpy as np
-import pandas as pd
-submission_df = pd.read_csv("/kaggle/input/2023-kaggle-ai-report/sample_submission.csv")
-submission_df.head()
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>type</th>
-      <th>value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>essay_category</td>
-      <td>'copy/paste the exact category that you are su...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>essay_url</td>
-      <td>'http://www.kaggle.com/your_username/your_note...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>feedback1_url</td>
-      <td>'http://www.kaggle.com/.../your_1st_peer_feedb...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>feedback2_url</td>
-      <td>'http://www.kaggle.com/.../your_2nd_peer_feedb...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>feedback3_url</td>
-      <td>'http://www.kaggle.com/.../your_3rd_peer_feedb...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
-val = ["Other", "https://www.kaggle.com/code/jonbown/acceleration-is-not-all-you-need-ai-hardware",
-      "https://www.kaggle.com/code/evgenykuznetsov/reinforcement-learning-agi-already-close/comments#2339604",
-      "https://www.kaggle.com/code/ahsuna123/kaggle-ai-report-healthcare-surge/comments#2337321",
-      "https://www.kaggle.com/code/manjeshhb0066hb/kaggle-ai-report-for-others-creating-an-ai-world/comments#2336868"]
-submission_df.value = val
-submission_df.to_csv('submission.csv', index=False)
-```
-
-
-```python
-submission_df.head()
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>type</th>
-      <th>value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>essay_category</td>
-      <td>Other</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>essay_url</td>
-      <td>https://www.kaggle.com/code/jonbown/accelerati...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>feedback1_url</td>
-      <td>https://www.kaggle.com/code/evgenykuznetsov/re...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>feedback2_url</td>
-      <td>https://www.kaggle.com/code/ahsuna123/kaggle-a...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>feedback3_url</td>
-      <td>https://www.kaggle.com/code/manjeshhb0066hb/ka...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
 
