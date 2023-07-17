@@ -50,20 +50,17 @@ Before examining hardware advancements, it is essential to establish common perf
 Using only CPU power or transistor count to compare hardware overlooks recent AI compute progress. For instance, Apple's NPU or "neural engine" has seen over 100% annual improvements in bulk compute, surpassing both CPU and GPU growth. Figure 1a shows the historical processing power of Apple's A-series iPhone System on a Chip (SoC) as well as the isolated CPU, GPU, NPU. The composition of the A14 SoC is shown in Figure 1b. The growth in bulk compute in the SoC, shown by the dotted line, is on an annual improvement pace of 118% since 2015 (Vellante & Floyer, 2021).
 
 <div align="center" style="background-color: #333; padding: 20px;">
-
-![CPU-GPU-NPU-Hardware-Comparison](/assets/images/kaggle-essay-2023/npuExplosion.jpg)
-
+      <img src="https://d2axcg2cspgbkk.cloudfront.net/wp-content/uploads/Breaking-Analysis_-Moores-Law-is-Accelerating-and-AI-is-Ready-to-Explode-1.jpg" width="90%">
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
 <b>Figure 1.</b> Apple iPhone A-series compute growth and A14 SoC composition. (a) The left panel shows the growth in operations per second capability of Apple's A-series chips. (b) The right panel illustrates the composition of the Apple iPhone A14 SoC. From "A New Era of Innovation: Moore's Law Is Not Dead and AI Is Ready to Explode", by J. Vellante & D. Floyer, 2021.
 </div>
 
 OpenAI identified three components reflecting AI progress in a 2018 study: algorithmic innovation, data, and training compute, with OPS as a crucial measure surpassing clock speed's relevance (Amodei & Hernandez, 2018). Moore's Law, correlating with the transistor count growth trend and ML advancement, shows signs of strain due to tech innovations. As the 2020s began, the tech community questioned Moore's Law's relevance, with MIT Technology Review's "We're Not Prepared for the End of Moore's Law" (Hoffman, 2020) casting doubts. However, some suggested a broader Moore's Law definition and more comprehensive metrics for computing advancements. Figure 2 shows the distinction of growth prior to and after 2012.
-
 <div align="center" style="background-color: #333; padding: 10px;">
-
-![Full deep learning timeline](/assets/images/kaggle-essay-2023/full-timeline.png)
-
+    <div style="display: flex; justify-content: center;">
+        <img src="https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F1506047%2F86778ff808061547b22637c2437454ef%2Fai-and-compute-all.png?generation=1687738766744537&alt=media" style="width: 80%; object-fit: contain;"/>
+    </div>
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
     <b>Figure 2.</b> Two distinct eras of compute. From "AI and Compute," by D. Amodei & D. Hernandez, 2018.
@@ -72,9 +69,9 @@ OpenAI identified three components reflecting AI progress in a 2018 study: algor
 Figure 3 shows a closer look at AI models' computational demand surpassing Moore's Law since 2012. AI training compute soared by over 300,000 times with a 3.4-month doubling time (Amodei & Hernandez, 2018). The Moore's law trend would have only doubled seven times in the same period of time. This indicates we are in a new AI compute evolution era, aligning with Sweeney's 'stacked exponential' concept.
 
 <div align="center" style="background-color: #333; padding: 10px;">
-
-![CPU-GPU-NPU-Hardware-Comparison](/assets/images/kaggle-essay-2023/2012-zoomed.png)
-
+    <div style="display: flex; justify-content: center;">
+        <img src="https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F1506047%2F9574381efab68a160ffbfb6297e69b83%2Fai-and-compute-modern-log.png?generation=1687738839069138&alt=media" style="width: 80%; object-fit: contain;"/>
+    </div>
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
     <b>Figure 3.</b> Closer look at the deep learning revolution since 2012. From "AI and Compute," by D. Amodei & D. Hernandez, 2018.
@@ -88,35 +85,29 @@ In order to address the need for standard measurement of deep learning processor
 Thought MLPerf was established in 2018, annual benchmark competitions were not standardized until the year 2020. In 2021, MLPerf v1.0 was officially introduced, featuring eight benchmark tests: image recognition, medical-imaging segmentation, object detection (two versions), speech recognition, natural-language processing, recommendation, and reinforcement learning. Commonly known as "the Olympics of machine learning," more than 20 top hardware companies compete on these tests (Moore, 2022). The June 2022 MLPerf v2.0 benchmark results demonstrated a significant nine to ten times increase in training time performance compared to Moore's law, as depicted in Figure 4 (Moore, 2022).
 
 <div align="center" style="background-color: #333; padding: 20px;">
-
-![Moore's Law with AI Comparison](/assets/images/kaggle-essay-2023/mlperf-2018-2022.png)
-
+      <img src="https://spectrum.ieee.org/media-library/a-chart-shows-six-lines-of-various-colors-sweeping-up-and-to-the-right.jpg?id=30049159&width=1580&quality=80" width="80%">
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
 <b>Figure 4.</b> MLPerf training time benchmarks vs Moore's Law. From "MLPerf Rankings 2022" by S. Moore, 2022.
 </div>
-
 Nvidia has consistently submitted results for all eight benchmark tests, making it the main exemplar in the evolution of AI compute across the ML landscape. In 2022, Nvidia's AI platform, powered by the A100 Tensor Core GPU, demonstrated exceptional versatility and efficiency in MLPerf. It achieved the fastest training time in four tests and the fastest performance per chip in six tests. This remarkable performance was attributed to innovations across GPUs, software, and scalability, resulting in a 23 times performance increase in just 3.5 years (Salvator, 2022). Figure 5a depicts the 2022 MLPerf results for the A100. 
 
 In the 2023 MLPerf tests (MLPerf v3.0), Nvidia's AI hardware exhibited a substantial performance increase compared to 2022. The newly introduced Nvidia H100 Tensor Core GPUs were designed with AI contributions and run on DGX H100 systems. They not only achieved the highest AI inference performance across all tests but also demonstrated a performance gain of up to 54% since their debut in September 2022 (Salvator, 2023). Figure 5b showcases the 2023 MLPerf results for the H100 compared to the A100. Specifically, in the healthcare domain, the capability of H100 GPUs have improved on the 3D U-Net medical imaging benchmark by 31%. Additionally, the H100 GPUs powered by the Transformer Engine excelled in the Bidirectional Encoder Representations from Transformers (BERT) LLM benchmark, significantly contributing to the rise of generative AI (Salvator, 2023). 
 
 <div align="center" style="background-color: #333; padding: 10px;">
-
-![Nvidia 2022 MLPerf Results](/assets/images/nvidia_2022.png)
-
+    <img src="https://www.hpcwire.com/wp-content/uploads/2021/09/Nvidia_Mlperf_Datacenter.png" style="width: 90%; height: auto;">
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
 <b>Figure 5a.</b> MLPerf A100 2022 results. From "Nvidia Orin Leaps Ahead in Edge AI, Boosting Leadership in MLPerf Tests," by D. Salvator, 2022.
 </div>
 
 <div align="center" style="background-color: #333; padding: 10px;">
-
-![Nvidia H100 2023](/assets/images/kaggle-essay-2023/H100-mlperf-2022.jpg)
-
+    <img src="https://blogs.nvidia.com/wp-content/uploads/2023/04/H100-GPU-inference-performance-MLPerf-1536x857.jpg" style="width: 90%; height: auto;">
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
 <b>Figure 5b.</b> MLPerf H100 2023 results. From "Inference MLPerf AI," by D. Salvator, 2023.
 </div>
+
 
 
 # A Journey Through AI Hardware Advancements
@@ -130,9 +121,9 @@ The following sections provide a summary of significant hardware advancements in
 Investment in AI hardware development significantly increased in 2021, with the total capital invested globally almost doubling to \$68 billion (Sharma, 2021). Precedence Research valued the 2021 AI hardware market at \$10 billion, projecting growth to \$90 billion by 2030 as shown in Figure 6 (Precedence Research, 2022). In 2021, the market demand for AI hardware was primarily driven by the need for more powerful processors, as depicted in Figure 7. This demand arose due to the significant divergence seen in the trajectories of compute power, which is vividly illustrated in Figure 8. Despite the limitations of storage and network compute power on the overall system's capabilities, it was the processors that boosted system compute measured in OPS. Specialized processors and accelerators increasingly bypassed the need for network or storage hardware by optimizing data flow on-device. This reduced the reliance on transferring data over the network, resulting in more efficient and faster computation (Vellante & Floyer, 2021).
 
 <div align="center" style="background-color: #333; padding: 10px;">
- 
-![Moore's Law with AI Comparison](/assets/images/kaggle-essay-2023/2021-2030-hardware-market-size.jpg)
-
+    <div style="display: flex; justify-content: center;">
+        <img src="https://www.precedenceresearch.com/insightimg/Artificial-Intelligence-in-Hardware-Market-Size-2021-to-2030.jpg" style="width: 70%; object-fit: contain;"/>
+    </div>
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
     <b>Figure 6.</b> AI Hardware Market Value. Adapted from "Artificial Intelligence (AI) in Hardware Market," by Precedence Research, 2022.
@@ -140,8 +131,7 @@ Investment in AI hardware development significantly increased in 2021, with the 
 
 <div align="center" style="background-color: #333; padding: 10px;">
     <div style="display: flex; justify-content: center;">
-
-![Processing Market Share](/assets/images/kaggle-essay-2023/processing-market-share.jpg)
+        <img src="https://www.precedenceresearch.com/insightimg/Artificial-Intelligence-in-Hardware-Market-Share-By-Type-2021.jpg" style="width: 70%; object-fit: contain;"/>
     </div>
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
@@ -150,8 +140,7 @@ Investment in AI hardware development significantly increased in 2021, with the 
 
 <div align="center" style="background-color: #333; padding: 10px;">
     <div style="display: flex; justify-content: center;">
-
-   ![Processing Market Share](/assets/images/kaggle-essay-2023/processing-explodes.jpg)
+        <img src="https://d2axcg2cspgbkk.cloudfront.net/wp-content/uploads/Breaking-Analysis_-Moores-Law-is-Accelerating-and-AI-is-Ready-to-Explode-3.jpg" style="width: 70%; object-fit: contain;"/>
     </div>
 </div>
 <div align="left" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 0;">
