@@ -24,7 +24,7 @@ layout: default
       <div class="post" {% for category in post.categories %}data-category-{{ category }} {% endfor %}>
         <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         <p>{{ post.date | date: "%B %d, %Y" }}</p>
-        <p>{{ post.excerpt }}</p>
+        <p>{{ post.description }}</p>
         <hr>
       </div>
     {% endfor %}
