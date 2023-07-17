@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "⚡ FlashAttention: Speed Up Your LLM 🏎️ "
-description: ""
+description: "FlashAttention methodology for optimizing your own LLM"
 date: 2023-06-05
 categories: ml
 ---

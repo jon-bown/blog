@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "🎙️ Data Science & ML Podcasts 2023 🎧"
-description: ""
+description: "Podcast recommendations for the field of data science and machine learning"
 date: 2023-06-14
 categories: ml
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mathematics of Card Shuffling"
-description: ""
+description: "Exciting new book on the mecahnics of probability in the context of card shuffling"
 date:  2023-06-03
 categories: math
 ---

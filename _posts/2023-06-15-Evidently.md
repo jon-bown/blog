@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Evidently: The Ultimate Tool for Streamlining Your Machine Learning Workflow ⚡"
-description: ""
+description: "Intro to the Evidently open-source framework"
 date: 2023-06-15
 ---
 

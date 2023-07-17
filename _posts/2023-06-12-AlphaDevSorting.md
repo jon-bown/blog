@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "🚀 AlphaDev: Revolutionizing Sorting Algorithms! 💡"
-description: ""
+description: "AlphaDev major breakthrough in sorting algorithms"
 date: 2023-06-12
 categories: ml
 ---
