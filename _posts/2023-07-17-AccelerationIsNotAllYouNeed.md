@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Acceleration Is Not All You Need: The State of AI Hardware"
-description: "My submission to The State of AI Kaggle Competition 2023"
+description: "My submission to the 2023 Kaggle AI Report"
 date: 2023-07-17
 categories: ml
 ---
@@ -10,7 +10,7 @@ categories: ml
 ### Date: 07-16-2023
 
 ## Table of Contents
-1. [Transforming The AI Landscape](#transforming-the-ai-landscape)
+1. [Transforming the AI Landscape](#transforming-the-ai-landscape)
 2. [The Deep Learning Hardware Revolution: An Overview](#the-deep-learning-hardware-revolution-an-overview)
 3. [Measuring AI Hardware Progress](#evaluating-ai-hardware-methodologies-and-metrics)
 4. [MLPerf: A Comprehensive Benchmarking Tool](#mlperf-a-comprehensive-benchmarking-tool)
