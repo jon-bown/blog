@@ -391,7 +391,7 @@ The final dataset constructed for fine-tuning consisted of the SQuAD, SQuAD adve
 The baseline of ELECTRA small was truly a low bar to set for the
 analysis and experiments for improvement. The fine-tuned ELECTRA on the
 SQuAD data performed on par with other `squad' models that have been
-fine tuned in the literature of around 84\% model F1 score (Jia and
+fine tuned in the literature of around 84% model F1 score (Jia and
 Liang2017). Despite the great performance on the validation set, it is
 apparent from the different sets of altered questions that it doesn't
 take much variation to disrupt the QA ability of this fine tuned model.
@@ -418,8 +418,8 @@ between these two experiments
 Across the experiments fine-tuning on the combination of SQuAD and AdvQA
 produced the most improvements across the different question sets.
 Combining these datasets resulted in a more representative sample of the
-adversarial and regular training examples. The model fine-tuned on the custom AdvQA set achieved a 94.67\% F1 score which
-exceeded the establshed human performance F1 of 91\% (Jia and Liang 2017).
+adversarial and regular training examples. The model fine-tuned on the custom AdvQA set achieved a 94.67% F1 score which
+exceeded the establshed human performance F1 of 91% (Jia and Liang 2017).
 Despite these improvements, one surprising result was that the
 adversarial context charts showed a decrease in scores for the
 adversarial scores for the different similarity examples.
