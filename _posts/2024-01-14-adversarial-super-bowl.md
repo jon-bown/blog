@@ -1,4 +1,11 @@
-# Adversarial Super Bowl
+---
+layout: post
+title: "Adversarial Super Bowl"
+description: "Improving QA ability of ELECTRA-small"
+baseurl: "/blog"
+date: 2024-01-14
+categories: ml
+---
 
 ## Jonathan Bown
 
@@ -205,29 +212,29 @@ The final dataset constructed for fine-tuning consisted of the SQuAD, SQuAD adve
 <p align="center"><i>Figure 1: Evaluation results across different adversarial context scenarios.</i></p>
 
 <p align="center">
-    <img src="/assets/images/adv-super-bowl/plots/adv_context_before_sqd.png" alt="Model Performance Evaluation" width="200">
-    <img src="/assets/images/adv-super-bowl/plots/adv_context_before_sqadv.png" alt="Model Performance Evaluation" width="200">
-    <img src="/assets/images/adv-super-bowl/plots/adv_context_before-sqv2.png" alt="Model Performance Evaluation" width="200">
-    <img src="/assets/images/adv-super-bowl/plots/adv_context_before_advqa.png" alt="Model Performance Evaluation" width="200">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/adv_context_before_sqd.png" alt="Model Performance Evaluation" width="200">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/adv_context_before_sqadv.png" alt="Model Performance Evaluation" width="200">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/adv_context_before-sqv2.png" alt="Model Performance Evaluation" width="200">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/adv_context_before_advqa.png" alt="Model Performance Evaluation" width="200">
 </p>
 
 
 <p align="center"><i>Figure 2: F1 vs Exact Match across different Super Bowl 50 checklist sets.</i></p>
 
 <p align="center">
-    <img src="/assets/images/adv-super-bowl/plots/v1_before_sqd.png" alt="Model Performance Evaluation" height="150">
-    <img src="/assets/images/adv-super-bowl/plots/v1_before_sqadv.png" alt="Model Performance Evaluation" height="150">
-    <img src="/assets/images/adv-super-bowl/plots/v1_before_sqv2.png" alt="Model Performance Evaluation" height="150">
-    <img src="/assets/images/adv-super-bowl/plots/v1_before_advqa.png" alt="Model Performance Evaluation" height="150">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/v1_before_sqd.png" alt="Model Performance Evaluation" height="150">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/v1_before_sqadv.png" alt="Model Performance Evaluation" height="150">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/v1_before_sqv2.png" alt="Model Performance Evaluation" height="150">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/v1_before_advqa.png" alt="Model Performance Evaluation" height="150">
 </p>
 
 <p align="center"><i>Figure 3: F1 vs Exact Match across different Super Bowl 50 validation sets.</i></p>
 
 <p align="center">
-    <img src="/assets/images/adv-super-bowl/plots/v2_before_sqd.png" alt="Model Performance Evaluation" height="150">
-    <img src="/assets/images/adv-super-bowl/plots/v2_before-sqadv.png" alt="Model Performance Evaluation" height="150">
-    <img src="/assets/images/adv-super-bowl/plots/v2_before_sqdv2.png" alt="Model Performance Evaluation" height="150">
-    <img src="/assets/images/adv-super-bowl/plots/v2_before_advqa.png" alt="Model Performance Evaluation" height="150">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/v2_before_sqd.png" alt="Model Performance Evaluation" height="150">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/v2_before-sqadv.png" alt="Model Performance Evaluation" height="150">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/v2_before_sqdv2.png" alt="Model Performance Evaluation" height="150">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/v2_before_advqa.png" alt="Model Performance Evaluation" height="150">
 </p>
 
 <p align="center"><i>Table 1: Exact Match and F1 Scores by Category for Different Experiments.</i></p>
@@ -372,7 +379,7 @@ The final dataset constructed for fine-tuning consisted of the SQuAD, SQuAD adve
 <p align="center"><i>Figure 4: F1 vs Exact Match across different Super Bowl 50 question sets.</i></p>
 
 <p align="center">
-    <img src="/assets/images/adv-super-bowl/plots/all_model_scores.png" alt="Model Performance Evaluation" height="500">
+    <img src="{{ site.baseurl }}/assets/images/adv-super-bowl/plots/all_model_scores.png" alt="Model Performance Evaluation" height="500">
 </p>
 
 
