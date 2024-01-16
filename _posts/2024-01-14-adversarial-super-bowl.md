@@ -165,9 +165,9 @@ The procedure in this project aims to identify problems and investigate solution
 
 - **Generate**: OpenAI's ChatGPT (Version 4.0) was used for generating initial sets of variational questions for the original Super Bowl 50 questions from the evaluation set.
 
-- **Baseline:** Evaluate the performance of the ELECTRA small model on altered holdout sets.
+- **Baseline:** Evaluate the performance of the ELECTRA-small model on altered holdout sets.
 
-- **Fine-tuned:** Assess the ELECTRA small model after fine-tuning on the SQuAD dataset, using the same examples.
+- **Fine-tuned:** Assess the ELECTRA-small model after fine-tuning on the SQuAD dataset, using the same examples.
 
 - **Investigate:** Identify areas of weakness to guide the development of potential solutions.
 
@@ -178,16 +178,19 @@ The procedure in this project aims to identify problems and investigate solution
 
 ## Fine-Tuning
 
-The ELECTRA small model was first loaded as a pre-trained model into a transformer model pipeline. This model was then trained on the entire train set of the original SQUAD dataset in a notebook with multiple T4 GPUs. The incorporation of GPUs was important because it drastically improved the feasibility of these experiments to run in 4-5 hours rather than days on multi-core CPUs. After this model was trained and saved, it was loaded into a different notebook and evaluated with the different set of perturbed 30 questions about Super Bowl 50. This process was repeated in each fine-tuning scenario. The element that changed throughout the experiment was the training data composition. The Hugging Face `transformers` and `datasets` libraries were instrumental in constructing the model pipelines and in evaluating the outcomes on the different sets of Super Bowl 50 datasets.
+The ELECTRA-small model was first loaded as a pre-trained model into a transformer model pipeline. This model was then trained on the entire train set of the original SQuAD dataset in a notebook with multiple T4 GPUs. The incorporation of GPUs was important because it drastically improved the feasibility of these experiments to run in 4-5 hours rather than days on multi-core CPUs. After this model was trained and saved, it was loaded into a different notebook and evaluated with the different set of perturbed 30 questions about Super Bowl 50. This process was repeated in each fine-tuning scenario. The element that changed throughout the experiment was the training data composition. The Hugging Face `transformers` and `datasets` libraries were instrumental in constructing the model pipelines and in evaluating the outcomes on the different sets of Super Bowl 50 datasets.
 
 ## Experiments
 
-In order to improve the performance of the ELECTRA small fine-tuned on the different evaluation sets several experiments were performed. These experiments focused on using 
+In order to improve the performance of the ELECTRA-small fine-tuned on
+the different evaluation sets several experiments were performed. These
+experiments were separated by either the type of model that was used such as baseline vs fine-tuned.
+The fine-tuned experiments used different QA dataset compositions. 
 
 
 ## Baseline
 
-The baseline performance data was obtained by loading the pre-trained ELECTRA small model and evaluating its performance on different Super Bowl 50 altered holdout sets. It was observed that the pre-trained small version could not correctly answer any questions in the evaluation set, as detailed in the results sections. 
+The baseline performance data was obtained by loading the pre-trained ELECTRA-small model and evaluating its performance on different Super Bowl 50 altered holdout sets. It was observed that the pre-trained small version could not correctly answer any questions in the evaluation set, as detailed in the results sections. 
 
 
 ## SQuAD Adversarial
@@ -197,7 +200,7 @@ The second attempt to improve model performance involved taking the first experi
 
 ## SQuAD V2
 
-Another experiment consisted of fine-tuning ELECTRA small on a slightly larger version of SQuAD called SQuAD v2. This version of SQuAD introduces an additional layer of complexity compared to the original. While the SQuAD 1.0 consisted solely of questions that had corresponding answers in the associated text passages, SQuAD 2.0 added a new dimension by including questions that do not have answers within the given text. This change requires the model not only to extract correct answers but also to discern when no answer is available, a more realistic scenario. The inclusion of such unanswerable questions in SQuAD 2.0 represents a substantial challenge and a more comprehensive test of a model's natural language understanding capabilities. By fine-tuning ELECTRA on this dataset, I wanted to see if this enhanced its ability to deal with a broader range of question-answering tasks, particularly in distinguishing between answerable and unanswerable queries.
+Another experiment consisted of fine-tuning ELECTRA-small on a slightly larger version of SQuAD called SQuAD v2. This version of SQuAD introduces an additional layer of complexity compared to the original. While the SQuAD 1.0 consisted solely of questions that had corresponding answers in the associated text passages, SQuAD 2.0 added a new dimension by including questions that do not have answers within the given text. This change requires the model not only to extract correct answers but also to discern when no answer is available, a more realistic scenario. The inclusion of such unanswerable questions in SQuAD 2.0 represents a substantial challenge and a more comprehensive test of a model's natural language understanding capabilities. By fine-tuning ELECTRA on this dataset, I wanted to see if this enhanced its ability to deal with a broader range of question-answering tasks, particularly in distinguishing between answerable and unanswerable queries.
 
 
 ## Adversarial QA
@@ -388,7 +391,7 @@ The final dataset constructed for fine-tuning consisted of the SQuAD, SQuAD adve
 
 # Discussion
 
-The baseline of ELECTRA small was truly a low bar to set for the
+The baseline of ELECTRA-small was truly a low bar to set for the
 analysis and experiments for improvement. The fine-tuned ELECTRA on the
 SQuAD data performed on par with other `squad' models that have been
 fine tuned in the literature of around 84% model F1 score (Jia and
